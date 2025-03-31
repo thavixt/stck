@@ -28,8 +28,8 @@ const EDITOR_CONTENTS: Record<EditorLanguage, string> = {
 `,
   javascript: localStorage.getItem(`stck-javascript`) ?? `console.log("stck. init");
   
-  // write a comment to describe something
-  // then let the vibe coding gods take the wheel
+// write a comment to describe something
+// then let the vibe coding gods take the wheel
 `,
 }
 
