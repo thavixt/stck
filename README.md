@@ -1,54 +1,11 @@
-# React + TypeScript + Vite
+# stck.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A very basic HTML+CSS+JS editor using `@codeium/react-code-editor`.
 
-Currently, two official plugins are available:
+> [Codeium React Code Editor](https://github.com/Exafunction/codeium-react-code-editor) is a free, open-source code editor as a React component with unlimited AI autocomplete
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Example
 
-## Expanding the ESLint configuration
+[This is a small example][example] that has a loop, printing values of the collarz series starting from 0.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+[example]: http://stck.komlosidev.net/#eyJjc3MiOiI6cm9vdCB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigzOSwgMzgsIDc1KTtcbiAgY29sb3I6IHdoaXRlc21va2U7XG59XG5cbmIge1xuICBjb2xvcjogc2t5Ymx1ZTtcbn1cblxuLmJhckNvbnRhaW5lcixcbi5jdXJyZW50QmFyIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGNvbG9yOiB3aGl0ZXNtb2tlO1xuICBoZWlnaHQ6IDhweDtcbiAgYm9yZGVyLXJhZGl1czogMTZweDtcbn1cblxuLmJhckNvbnRhaW5lciB7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHNsYXRlZ3JheTtcbiAgd2lkdGg6IDdyZW07XG4gIG1hcmdpbjogMC41cmVtIDA7XG59XG4uY3VycmVudEJhciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHNreWJsdWU7XG4gIHdpZHRoOiAwJTtcbn0iLCJodG1sIjoiPGRpdj5cbiAgICA8c3Bhbj5cbiAgICAgICAgY29sbGF0eiBvZiA8YiBpZD1cImlcIj4wPC9iPiA9IDxiIGlkPVwidmFsdWVcIj4wPC9iPlxuICAgIDwvc3Bhbj5cbiAgICA8ZGl2IGNsYXNzPVwiYmFyQ29udGFpbmVyXCI+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjdXJyZW50QmFyXCI+XG4gICAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxzcGFuPmhpZ2hlc3Qgc28gZmFyOiA8YiBpZD1cIm1heFZhbHVlXCI+MDwvYj48L3NwYW4+XG48L2Rpdj4iLCJqcyI6Ii8qKlxuICogR2VuZXJhdGUgY29sbGF0eiBzZXJpZXNcbiAqIGh0dHBzOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL0NvbGxhdHpfY29uamVjdHVyZVxuICovXG5mdW5jdGlvbiBjb2xsYXR6KG4pIHtcbiAgaWYgKG4gJSAyID09IDApIHtcbiAgICByZXR1cm4gbiAvIDI7XG4gIH0gZWxzZSB7XG4gICAgcmV0dXJuIDMgKiBuICsgMTtcbiAgfVxufVxuXG5sZXQgY3VycmVudEluZGV4ID0gMDtcbmNvbnN0IGluZGV4Q29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJpXCIpO1xuY29uc3QgdmFsdWVDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcInZhbHVlXCIpO1xuY29uc3QgbWF4VmFsdWVDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcIm1heFZhbHVlXCIpO1xuY29uc3QgYmFyQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeUNsYXNzTmFtZShcImJhckNvbnRhaW5lclwiKVswXTtcbmNvbnN0IGN1cnJlbnRCYXIgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5Q2xhc3NOYW1lKFwiY3VycmVudEJhclwiKVswXTtcblxubGV0IG1heCA9IDA7XG5cbnNldEludGVydmFsKCgpID0+IHtcbiAgY29uc3QgY3VycmVudFZhbHVlID0gY29sbGF0eihjdXJyZW50SW5kZXgpO1xuICBpbmRleENvbnRhaW5lci5pbm5lckhUTUwgPSBgbiR7Y3VycmVudEluZGV4fWA7XG4gIHZhbHVlQ29udGFpbmVyLmlubmVySFRNTCA9IGN1cnJlbnRWYWx1ZTtcbiAgY3VycmVudEluZGV4Kys7XG4gIG1heCA9IE1hdGgubWF4KG1heCwgY3VycmVudFZhbHVlKTtcbiAgbWF4VmFsdWVDb250YWluZXIuaW5uZXJIVE1MID0gbWF4O1xuICBjdXJyZW50QmFyLnN0eWxlLndpZHRoID0gKGN1cnJlbnRWYWx1ZSAvIG1heCkgKiAxMDAgKyBcIiVcIjtcbn0sIDIwMCk7XG4ifQ==

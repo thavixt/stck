@@ -1,3 +1,7 @@
+/*
+  using @thavixt/uikit's pre-built styles instead of Tailwind itself.
+  it'll contain most of the common utility classes anyway..
+*/
 @import "node_modules/@thavixt/uikit/dist/index.css";
 
 :root {
@@ -7,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #343638;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
